@@ -4,6 +4,7 @@
   --secondary-color: darkgreen;
   --menu-bg-color: lightpink;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,16 +16,18 @@ a:visited {
   color: var(--primary-color);
   color: inherit;
 }
+
 a {
   text-decoration: none;
 }
+
 html {
   font-size: 16px;
 }
 
 body {
   background-color: var(--main-bg-color);
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-flow: column;
@@ -38,22 +41,16 @@ header#global_header {
   display: flex;
   padding: 0 0.5rem;
 }
+
 header#global_header h1 {
   font-size: 3rem;
   width: 100%;
 }
+
 header#global_header #btn_menu:hover {
   cursor: pointer;
 }
 
-footer#global_footer {
-  padding-bottom: 15px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
 
 main#global_main {
   position: relative;
@@ -61,6 +58,7 @@ main#global_main {
   height: 98%;
   justify-self: center;
 }
+
 aside#menu {
   position: absolute;
   float: left;
@@ -79,10 +77,12 @@ aside#menu ul {
   margin-top: 1rem;
   list-style-type: none;
 }
+
 aside#menu h3 {
   text-align: center;
   font-size: 2rem;
 }
+
 aside#menu ul li a {
   display: flex;
   align-items: center;
@@ -97,11 +97,35 @@ aside#menu.opened {
   opacity: 1;
 }
 
-.primary {
-  color: var(--primary-color);
+#srm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.secondary {
-  color: var(--secondary-color);
+
+.orgaos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orgaos button {
+  width: 200px;
+}
+
+#linha {
+  height: 2px;
+  margin: 20px 0 20px 0;
+  background-color: black;
+}
+
+footer#global_footer {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 footer#global_footer img,
@@ -109,4 +133,5 @@ header#global_header img,
 main#global_main aside#menu img {
   width: 2rem;
   height: 2rem;
+
 }
