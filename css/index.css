@@ -2,7 +2,7 @@
   --main-bg-color: lightgreen;
   --primary-color: green;
   --secondary-color: darkgreen;
-  --menu-bg-color: lightpink;
+  --menu-bg-color: rgb(116, 143, 225);
 }
 
 * {
@@ -10,6 +10,8 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--primary-color);
+  font-family: Calibri;
+  font-size: 17px;
 }
 
 a:visited {
@@ -134,4 +136,18 @@ main#global_main aside#menu img {
   width: 2rem;
   height: 2rem;
 
+}
+
+button{
+    background-color: #839ea8;
+    border: none;
+    min-width: 100px;
+    min-height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+  background-color: #097ba4;
+  color: white
 }
