@@ -1,7 +1,4 @@
 :root {
-  --main-bg-color: lightgreen;
-  --primary-color: green;
-  --secondary-color: darkgreen;
   --menu-bg-color: rgb(116, 143, 225);
 }
 
@@ -29,8 +26,9 @@ html {
 
 body {
   background-color: var(--main-bg-color);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  height: 120vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -123,11 +121,20 @@ aside#menu.opened {
 }
 
 footer#global_footer {
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  background-color: #097ba4;
+  /*cor apenas para deixar visível*/
 }
 
 footer#global_footer img,
@@ -138,16 +145,16 @@ main#global_main aside#menu img {
 
 }
 
-button{
-    background-color: #839ea8;
-    border: none;
-    min-width: 100px;
-    min-height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
+button {
+  background-color: #839ea8;
+  border: none;
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #097ba4;
   color: white
 }
