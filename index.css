@@ -114,7 +114,7 @@ aside#menu.opened {
   width: 200px;
 }
 
-#linha {
+.linha {
   height: 2px;
   margin: 20px 0 20px 0;
   background-color: black;
