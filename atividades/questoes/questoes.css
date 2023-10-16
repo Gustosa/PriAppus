@@ -28,8 +28,7 @@ html {
 }
 
 body {
-  background: linear-gradient(#ff9933, #005254);
-  width: 100vw;
+  background: linear-gradient(0deg, rgba(48, 150, 153, 1) 0%, rgba(5, 42, 107, 1) 45%);
   height: 100vh;
   display: flex;
   flex-flow: column;
@@ -63,6 +62,7 @@ main#global_main {
   width: 100%;
   height: 98%;
   justify-self: center;
+  align-items: center;
 }
 
 aside#menu {
@@ -129,13 +129,30 @@ aside#menu.opened {
 
 .linha {
   height: 0.3%;
-  margin: 2% 2% 2% 2%;
-  background-color: #3c3c3c;
+  margin: 0 2% 2% 2%;
+  background-color: grey;
 }
 
+#button {
+  display: flex;
+justify-content: center;}
+
+
 #corrigir {
-  width: 12%;
+  background-color: #839ea8;
+  border: none;
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
 }
+
+#corrigir:hover {
+  background-color: #097ba4;
+  color: white
+}
+
+
 
 footer#global_footer {
   padding: 0 15px 15px 15px;
