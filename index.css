@@ -37,7 +37,7 @@ body {
 
 header#global_header {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   display: flex;
   padding: 0 0.5rem;
 }
@@ -45,6 +45,7 @@ header#global_header {
 header#global_header h1 {
   font-size: 3rem;
   width: 100%;
+  padding: 2% 2% 2% 0;
 }
 
 header#global_header #btn_menu:hover {
