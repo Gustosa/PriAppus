@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tutorail Página Inicial</h1>
+    </header>
+    <main>
+        <a href="javascript:void(0)" onclick="mudarSlide(-1)">Slide anterior</a>
+        <div class="slide ativo" data-slide="1">COnteúdo 1</div>
+        <div class="slide" data-slide="2">COnteúdo 2</div>
+        <div class="slide" data-slide="3">COnteúdo 3</div>
+        <div class="slide" data-slide="4">COnteúdo 4</div>
+        <a href="javascript:void(0)" onclick="mudarSlide(1)">Slide posterior</a>
+        <a href="javascript:window.history.back()">Fechar</a>
+    </main>
+    <link rel="stylesheet" href="tutorial.css">
+    <script src="tutorial.js"></script>
+</body>
+
+</html>

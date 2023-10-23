@@ -1,0 +1,9 @@
+.slide {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.slide.ativo {
+    display: block;
+}

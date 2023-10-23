@@ -1,18 +1,11 @@
-:root {
-  --menu-bg-color: rgb(116, 143, 225);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--primary-color);
-  font-family: Calibri;
-  font-size: 17px;
+  color: whitesmoke;
 }
 
 a:visited {
-  color: var(--primary-color);
   color: inherit;
 }
 
@@ -25,10 +18,10 @@ html {
 }
 
 body {
-  background-color: var(--main-bg-color);
-  width: 100%;
+  background: linear-gradient(171deg, rgba(48, 150, 153, 1) 0%, rgba(34, 85, 175, 1) 45%);
+  min-width: 320px;
+  max-width: 800px;
   height: 100vh;
-  height: 120vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -37,15 +30,18 @@ body {
 
 header#global_header {
   text-align: center;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   display: flex;
   padding: 0 0.5rem;
+}
+
+header #global_header #btn_menu {
+  align-items: center;
 }
 
 header#global_header h1 {
   font-size: 3rem;
   width: 100%;
-  padding: 2% 2% 2% 0;
 }
 
 header#global_header #btn_menu:hover {
@@ -58,33 +54,34 @@ main#global_main {
   width: 100%;
   height: 98%;
   justify-self: center;
+  align-items: center;
 }
 
-aside#menu {
+aside#global_menu {
   position: absolute;
   float: left;
   top: 0;
-  height: 100%;
-  min-width: 60%;
-  max-width: 80%;
-  background-color: var(--menu-bg-color);
+  z-index: 1000;
+  height: 100vh;
+  min-width: 300px;
+  background-color: #1f468c;
   transition: visibility 0.5s linear, opacity 0.5s linear;
   visibility: hidden;
   opacity: 0;
   padding: 1rem;
 }
 
-aside#menu ul {
+aside#global_menu ul {
   margin-top: 1rem;
   list-style-type: none;
 }
 
-aside#menu h3 {
+aside#global_menu h3 {
   text-align: center;
   font-size: 2rem;
 }
 
-aside#menu ul li a {
+aside#global_menu ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +90,7 @@ aside#menu ul li a {
   font-size: 1.5rem;
 }
 
-aside#menu.opened {
+aside#global_menu.opened {
   visibility: visible;
   opacity: 1;
 }
@@ -101,49 +98,70 @@ aside#menu.opened {
 #srm {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-
-.orgaos {
-  display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  padding: 2%;
 }
 
-.orgaos button {
-  width: 200px;
+#srm #pergunta {}
+
+#srm #pergunta #enunciado {
+  margin-bottom: 2%;
+}
+
+#srm #pergunta #alternativas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+#srm #pergunta #alternativas .alternativa {
+  padding: 0.5%;
 }
 
 .linha {
-  height: 2px;
-  margin: 20px 0 20px 0;
-  background-color: black;
+  height: 0.3%;
+  margin: 0 2% 2% 2%;
+  background-color: grey;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+
+#corrigir {
+  background-color: #839ea8;
+  border: none;
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#corrigir:hover {
+  background-color: #097ba4;
+  color: white
 }
 
 footer#global_footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  bottom: 0;
-  left: 0;
-  height: 45px;
-  position: fixed;
+  position: sticky;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding: 0 15px 15px 15px;
   width: 100%;
-  background-color: #097ba4;
-  /*cor apenas para deixar visível*/
+  display: flex;
+  justify-content: space-between;
 }
 
 footer#global_footer img,
 header#global_header img,
-main#global_main aside#menu img {
+aside#global_menu img {
   width: 2rem;
   height: 2rem;
-
+  position: relative;
+  z-index: 1001;
 }
 
 button {
