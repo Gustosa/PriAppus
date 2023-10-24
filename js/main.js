@@ -1,19 +1,17 @@
 function show_menu() {
-  var menu = document.getElementById("menu");
-  if (menu.classList.contains("opened")) {
-    menu.classList.remove("opened");
+  var global_menu = document.getElementById("global_menu");
+  if (global_menu.classList.contains("opened")) {
+    global_menu.classList.remove("opened");
   } else {
-    console.log("carai2");
     document.body.addEventListener("click", close_menu, false);
-    menu.classList.add("opened");
+    global_menu.classList.add("opened");
   }
 }
 
 function close_menu(e) {
   if (e.target.id !== "show_menu") {
-    console.log("carai");
     document.body.removeEventListener("click", close_menu, false);
-    menu.classList.remove("opened");
+    global_menu.classList.remove("opened");
   }
 }
 

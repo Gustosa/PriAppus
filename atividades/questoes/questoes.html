@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>PriAppus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./questoes.css" />
-  <link rel="stylesheet" href="../../css_especifico.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../../index.css" />
   <link href="../../img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
 </head>
 
@@ -19,24 +18,25 @@
     <h1>Perguntas</h1>
   </header>
 
+  <aside id="global_menu">
+    <h3>Menu</h3>
+    <ul>
+      <li>
+        <a href="http://ifpr.edu.br">
+          <img src="../../img/question.svg" alt="Perguntas" />
+          Perguntas
+        </a>
+      </li>
+      <li>
+        <a href="http://ifpr.edu.br">
+          <img src="../../img/puzzle.svg" alt="Desafios" />
+          Desafios
+        </a>
+      </li>
+    </ul>
+  </aside>
+
   <main id="global_main">
-    <aside id="menu">
-      <h3>Menu</h3>
-      <ul>
-        <li>
-          <a href="http://ifpr.edu.br">
-            <img src="../../img/question.svg" alt="Perguntas" />
-            Perguntas
-          </a>
-        </li>
-        <li>
-          <a href="http://ifpr.edu.br">
-            <img src="../../img/puzzle.svg" alt="Desafios" />
-            Desafios
-          </a>
-        </li>
-      </ul>
-    </aside>
     <div id="srm">
       <div id="pergunta">
         <div id="enunciado">
@@ -48,7 +48,7 @@
             tortor cursus leo, in egestas sem quam sed est. </p>
         </div>
         <div id="alternativas">
-          <div class="alternativa">
+          <div class="alternativa correta">
             <input type="radio" name="alternativa" class="alternativa">
             <label for="alternativa">Alternativa</label>
           </div>
@@ -77,9 +77,6 @@
     <div id="button">
       <button id="corrigir">Corrigir respostas</button>
     </div>
-
-
-
   </main>
 
   <footer id="global_footer">
