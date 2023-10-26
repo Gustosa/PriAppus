@@ -20,8 +20,9 @@ html {
 body {
   background: rgb(156, 97, 204);
   background: linear-gradient(0deg, rgba(156, 97, 204, 1) 33%, rgba(110, 148, 223, 1) 100%);
-  width: 100%;
-  height: 120vh;
+  max-width: 800px;
+  min-width: 320px;
+  min-height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -30,7 +31,7 @@ body {
 
 header#global_header {
   text-align: center;
-  margin: 1rem 0;
+  margin-top: 1rem;
   display: flex;
   padding: 0 0.5rem;
 }
@@ -46,15 +47,6 @@ header#global_header h1 {
 
 header#global_header #btn_menu:hover {
   cursor: pointer;
-}
-
-
-main#global_main {
-  position: relative;
-  width: 100%;
-  height: 98%;
-  justify-self: center;
-  align-items: center;
 }
 
 aside#global_menu {
@@ -95,59 +87,33 @@ aside#global_menu.opened {
   opacity: 1;
 }
 
+main#global_main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 #srm {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2%;
+  padding: 0 2%;
 }
 
-#srm #pergunta #enunciado {
-  margin-bottom: 2%;
-}
-
-#srm #pergunta #alternativas {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-}
-
-#srm #pergunta #alternativas .alternativa {
-  padding: 0.5%;
-}
-
-.linha {
-  height: 0.3%;
-  margin: 0 2% 2% 2%;
+#srm .linha {
+  height: 3px;
+  width: 98%;
   background-color: grey;
+  margin: 2%;
 }
 
-footer#global_footer {
-  position: sticky;
-  bottom: 0px;
-  margin-bottom: 0px;
-  padding: 0 15px 15px 15px;
-  width: 100%;
+#srm .botoes {
   display: flex;
-  justify-content: space-between;
-}
-
-footer#global_footer img,
-header#global_header img,
-aside#global_menu img {
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  z-index: 1001;
-}
-
-.orgaos {
-  display: flex;
-  align-items: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  padding: 15px 0;
 }
 
 button {
@@ -168,13 +134,83 @@ button:hover {
   color: white
 }
 
+#srm .imagem {
+  max-width: 300px;
+  max-height: 300px
+}
 
-#button {
+#srm .texto {
+  padding: 10px;
+}
+
+#srm .texto h2 {
+  margin-bottom: 5px;
+}
+
+#srm .texto p {
+  text-indent: 40px;
+  text-align: justify;
+}
+
+#srm ul li {
+  margin: 0 2% 2% 2%;
+  text-align: justify;
+}
+
+#srm #pergunta {
+  margin: 2% 0;
+}
+
+#srm #pergunta #enunciado {
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+#srm #pergunta #alternativas {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+#srm #pergunta #alternativas .alternativa {
+  padding: 0.5%;
+}
+
+#srm #pergunta .verde {
+  background-color: green;
+}
+
+#srm #pergunta .vermelho {
+  background-color: red;
+}
+
+footer#global_footer {
+  background: rgb(156, 97, 204);
+  position: sticky;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer#global_footer img,
+header#global_header img,
+aside#global_menu img {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  z-index: 1001;
 }
 
 #corrigir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#corrigir button {
   background-color: #839ea8;
   border: none;
   min-width: 150px;
@@ -183,7 +219,7 @@ button:hover {
   cursor: pointer;
 }
 
-#corrigir:hover {
+#corrigir button:hover {
   background-color: #097ba4;
   color: white
 }
