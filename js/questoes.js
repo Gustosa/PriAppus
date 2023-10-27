@@ -4,6 +4,8 @@ function Corrigir() {
 
     alternativas.forEach(element => {
 
+        element.classList.remove("vermelho");
+
         if (element.children[0].checked) {
             resposta_usuario.push(element);
         }

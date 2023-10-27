@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: whitesmoke;
+  font-family: Calibri, sans-serif;
 }
 
 a:visited {
@@ -18,8 +19,7 @@ html {
 }
 
 body {
-  background: rgb(156, 97, 204);
-  background: linear-gradient(0deg, rgba(156, 97, 204, 1) 33%, rgba(110, 148, 223, 1) 100%);
+  background: linear-gradient(0deg, rgba(100, 49, 141, 1) 33%, rgba(65, 98, 166, 1) 100%);
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
@@ -55,7 +55,7 @@ aside#global_menu {
   top: 0;
   z-index: 1000;
   height: 100vh;
-  min-width: 300px;
+  min-width: 250px;
   background-color: #1f468c;
   transition: visibility 0.5s linear, opacity 0.5s linear;
   visibility: hidden;
@@ -104,8 +104,9 @@ main#global_main {
 #srm .linha {
   height: 3px;
   width: 98%;
-  background-color: grey;
+  background-color: whitesmoke;
   margin: 2%;
+  border-radius: 10px;
 }
 
 #srm .botoes {
@@ -147,6 +148,10 @@ button:hover {
   margin-bottom: 5px;
 }
 
+#srm .texto h3 {
+  margin-bottom: 5px;
+}
+
 #srm .texto p {
   text-indent: 40px;
   text-align: justify;
@@ -173,7 +178,8 @@ button:hover {
 }
 
 #srm #pergunta #alternativas .alternativa {
-  padding: 0.5%;
+  padding: 2px;
+  border-radius: 10px;
 }
 
 #srm #pergunta .verde {
@@ -185,7 +191,7 @@ button:hover {
 }
 
 footer#global_footer {
-  background: rgb(156, 97, 204);
+  background: rgb(100, 49, 141);
   position: sticky;
   bottom: 0px;
   margin-bottom: 0px;
