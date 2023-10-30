@@ -229,3 +229,18 @@ aside#global_menu img {
   background-color: #097ba4;
   color: white
 }
+
+
+body::-webkit-scrollbar {
+  width: 0;               
+}
+
+body::-webkit-scrollbar-track {
+  background: none;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: none;    
+  border-radius: none;       
+  border: none; 
+}
