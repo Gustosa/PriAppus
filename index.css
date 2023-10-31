@@ -117,7 +117,7 @@ main#global_main {
   padding: 15px 0;
 }
 
-button {
+#srm button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#srm button:hover {
   background-color: #1a0891;
   color: white
 }
@@ -155,6 +155,7 @@ button:hover {
 #srm .texto p {
   text-indent: 40px;
   text-align: justify;
+  margin-bottom: 5px;
 }
 
 #srm ul li {
@@ -199,6 +200,11 @@ footer#global_footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+footer#global_footer button {
+  all: unset;
+  cursor: pointer;
 }
 
 footer#global_footer img,
