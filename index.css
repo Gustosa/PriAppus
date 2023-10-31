@@ -237,15 +237,15 @@ aside#global_menu img {
 }
 
 body::-webkit-scrollbar {
-  width: 0;               
+  width: 0;
 }
 
 body::-webkit-scrollbar-track {
-  background: none;       
+  background: none;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: none;    
-  border-radius: none;       
-  border: none; 
+  background-color: none;
+  border-radius: none;
+  border: none;
 }

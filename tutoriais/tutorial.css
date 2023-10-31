@@ -1,10 +1,46 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .slide {
-    width: 100px;
-    height: 100px;
     display: none;
-    background-color: blueviolet;
 }
 
 .slide.ativo {
     display: block;
+}
+
+#balao {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px blue solid;
+    border-radius: 45px;
+    width: 200px;
+    position: relative;
+}
+
+#balao::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 64px;
+    left: 60px;
+    background-color: white;
+    border: 2px solid;
+    border-color: transparent blue blue transparent;
+    position: absolute;
+    display: block;
+    transform: rotate(45deg);
+}
+
+#mascote {
+    left: 100px;
+}
+
+#romulo {
+    width: 250px;
+    height: 250px;
 }
