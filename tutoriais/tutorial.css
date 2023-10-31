@@ -1,46 +1,50 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
-    display: none;
+  display: none;
 }
 
 .slide.ativo {
-    display: block;
+  display: block;
 }
 
 #balao {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border: 2px blue solid;
-    border-radius: 45px;
-    width: 200px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px blue solid;
+  border-radius: 20px;
+  width: 200px;
+  position: relative;
+  height: 160px;
+  text-align: justify;
 }
 
 #balao::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    top: 64px;
-    left: 60px;
-    background-color: white;
-    border: 2px solid;
-    border-color: transparent blue blue transparent;
-    position: absolute;
-    display: block;
-    transform: rotate(45deg);
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-top: 0;
+  border: 2px solid;
+  border-color: transparent blue blue transparent;
+  position: absolute;
+  display: block;
+  transform: rotate(45deg);
+  bottom: -15px;
+  left: 30%;
+  margin: 0;
 }
 
 #mascote {
-    left: 100px;
+  left: 100px;
 }
 
 #romulo {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }

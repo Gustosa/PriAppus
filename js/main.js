@@ -15,4 +15,6 @@ function close_menu(e) {
   }
 }
 
-document.getElementById("btn_menu").addEventListener("click", show_menu);
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btn_menu").addEventListener("click", show_menu);
+});
