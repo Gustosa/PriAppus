@@ -7,6 +7,7 @@
   "orientation": "",
   "scope": "/PriAppus",
   "start_url": "/PriAppus",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",

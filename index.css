@@ -19,7 +19,11 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(100, 49, 141, 1) 33%, rgba(65, 98, 166, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(100, 49, 141, 1) 33%,
+    rgba(65, 98, 166, 1) 100%
+  );
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
@@ -132,12 +136,12 @@ main#global_main {
 
 #srm button:hover {
   background-color: #1a0891;
-  color: white
+  color: white;
 }
 
 #srm .imagem {
   max-width: 300px;
-  max-height: 300px
+  max-height: 300px;
 }
 
 #srm .texto {
@@ -233,7 +237,7 @@ aside#global_menu img {
 
 #corrigir button:hover {
   background-color: #097ba4;
-  color: white
+  color: white;
 }
 
 body::-webkit-scrollbar {
@@ -248,4 +252,8 @@ body::-webkit-scrollbar-thumb {
   background-color: none;
   border-radius: none;
   border: none;
+}
+
+#srm #setup_button {
+  display: none;
 }
