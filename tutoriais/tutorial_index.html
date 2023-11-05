@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial</title>
-    <link rel="stylesheet" href="tutorial.css" />
-    <script src="tutorial.js"></script>
-    <script src="../js/controlar_acesso.js"></script>
-    <link href="../img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial</title>
+  <link rel="stylesheet" href="tutorial.css" />
+  <script src="tutorial.js"></script>
+  <script src="../js/controlar_acesso.js"></script>
+  <link href="../img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
+</head>
 
-    <main>
-      <div class="slide ativo" data-slide="1">
-        <div id="balao">Seja bem vindo ao PriAppus!</div>
+<body>
+  <header></header>
 
-        <div id="mascote">
-          <img src="../img/mascote.png" alt="" id="romulo" />
-        </div>
+  <main>
+    <div class="slide ativo" data-slide="1">
+      <div id="balao">Seja bem vindo ao PriAppus!</div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="2">
+      <div id="balao">
+        O Priappus é uma aplicação desenvolvida por alunos do Ensino Médio
+        para que outros estudantes possam conhecer mais sobre o sistema
+        reprodutor masculino.
       </div>
 
-      <div class="slide" data-slide="2">
-        <div id="balao">
-          O Priappus é uma aplicação desenvolvida por alunos do Ensino Médio
-          para que outros estudantes possam conhecer mais sobre o sistema
-          reprodutor masculino.
-        </div>
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
 
-        <div id="mascote">
-          <img src="../img/mascote.png" alt="" id="romulo" />
-        </div>
+    <div class="slide" data-slide="3">
+      <div id="balao">
+        Aqui você encontrorá conteúdos, perguntas e desafios sobre o sistema
+        reprodutor masculino!
       </div>
 
-      <div class="slide" data-slide="3">
-        <div id="balao">
-          Aqui você encontrorá conteúdos, perguntas e desafios sobre o sistema
-          reprodutor masculino!
-        </div>
-
-        <div id="mascote">
-          <img src="../img/mascote.png" alt="" id="romulo" />
-        </div>
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
       </div>
+    </div>
 
-      <a href="javascript:void(0)" onclick="mudarSlide(-1)">Slide anterior</a>
-      <a href="javascript:void(0)" onclick="mudarSlide(1)">Slide posterior</a>
-      <a href="javascript:void(0)" onclick="finalizar_tutorial()">Fechar</a>
-    </main>
-  </body>
+    <footer>
+      <a href="javascript:void(0)" onclick="mudarSlide(-1)">
+        <button>Anterior</button>
+      </a>
+      <a href="javascript:void(0)" onclick="mudarSlide(1)">
+        <button>Próximo</button>
+      </a>
+      <a href="javascript:void(0)" onclick="finalizar_tutorial()">
+        <button>Fechar</button>
+      </a>
+    </footer>
+  </main>
+</body>
+
 </html>

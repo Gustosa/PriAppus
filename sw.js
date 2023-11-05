@@ -1,4 +1,4 @@
-const staticInterneuronios = "dev-PriAppus-site-v1";
+const staticPriAppus = "dev-PriAppus-site-v1";
 
 var assets = [
   "/",
@@ -37,6 +37,7 @@ var assets = [
   "img/glandula_bulbouretral.png",
   "tutoriais/tutorial.css",
   "tutoriais/tutorial_index.html",
+  "tutoriais/tutorial_telas.html",
   "tutoriais/tutorial.js",
   "orgaos/testiculos/definicao.html",
   "orgaos/testiculos/orgao.html",
@@ -86,7 +87,7 @@ var assets = [
 
 self.addEventListener("install", (installEvent) => {
   installEvent.waitUntil(
-    caches.open(staticInterneuronios).then(async (cache) => {
+    caches.open(staticPriAppus).then(async (cache) => {
       try {
         ok = await cache.addAll(assets);
       } catch (err) {

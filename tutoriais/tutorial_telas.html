@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial</title>
+  <link rel="stylesheet" href="tutorial.css" />
+  <script src="tutorial.js"></script>
+  <script src="../js/controlar_acesso.js"></script>
+  <link href="../img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+  <header></header>
+
+  <main>
+    <div class="slide ativo" data-slide="1">
+      <div id="balao">Ao fundo se encontram os botões com os órgãos do sistema reprodutor masculino. </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="2">
+      <div id="balao"> Ao clicar no nome de um órgão, você será irecionado a sua respectiva tela. </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="3">
+      <div id="balao"> Você pode me chamar sempre que tiver dúvidas com o botão no canto inferior central. </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="4">
+      <div id="balao"> No canto superior esquerdo você poderá acessar o menu que contará um simulado de questões, após responder todas as questões, você poderá verfificar seus resultados.</div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="5">
+      <div id="balao"> No menu você também encontrará desafios sobre o sistema, aproveite! </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="6">
+      <div id="balao"> Ao clicar em um órgão, você encontrará o material didático a respeito do mesmo. </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <div class="slide" data-slide="7">
+      <div id="balao"> Você também pode acessar informações sobre suas principais doenças e as curiosidades dele. </div>
+
+      <div id="mascote">
+        <img src="../img/mascote.png" alt="" id="romulo" />
+      </div>
+    </div>
+
+    <footer>
+      <a href="javascript:void(0)" onclick="mudarSlide(-1)"> 
+        <button> Anterior </button>
+      </a>
+      
+      <a href="javascript:void(0)" onclick="mudarSlide(1)"> 
+        <button> Próximo </button>
+      </a>
+
+      <a href="javascript:void(0)" onclick="finalizar_tutorial()"> 
+        <button> Fechar </button> 
+        </a>
+      </footer>
+  </main>
+</body>
+
+</html>

@@ -8,3 +8,9 @@ function verifica_tutorial() {
     location.href = "tutoriais/tutorial_index.html";
   }
 }
+
+function verifica_tutorial2() {
+  if (!localStorage.key("tutorial")) {
+    location.href = "tutoriais/tutorial_telas.html";
+  }
+}

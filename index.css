@@ -197,7 +197,6 @@ main#global_main {
 
 footer#global_footer {
   background: rgb(100, 49, 141);
-  position: sticky;
   bottom: 0px;
   margin-bottom: 0px;
   padding: 10px 10px 10px 10px;
@@ -206,12 +205,23 @@ footer#global_footer {
   justify-content: space-between;
 }
 
+footer#index_footer {
+  background: rgb(100, 49, 141);
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 footer#global_footer button {
   all: unset;
   cursor: pointer;
 }
 
 footer#global_footer img,
+footer#index_footer img,
 header#global_header img,
 aside#global_menu img {
   width: 2rem;

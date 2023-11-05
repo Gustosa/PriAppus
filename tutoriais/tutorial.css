@@ -2,6 +2,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(163, 170, 249);
 }
 
 .slide {
@@ -10,6 +11,7 @@ body {
 
 .slide.ativo {
   display: block;
+  margin-left: 25%;
 }
 
 #balao {
@@ -28,7 +30,7 @@ body {
   content: "";
   width: 25px;
   height: 25px;
-  background-color: white;
+  background-color: rgba(163, 170, 249);
   border-top: 0;
   border: 2px solid;
   border-color: transparent blue blue transparent;
@@ -47,4 +49,25 @@ body {
 #romulo {
   width: 250px;
   height: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer button{
+  justify-content: center;
+  align-items: center;
+  background-color: #bdd3f3;
+  color: black;
+  border: none;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #1a0891;
+  color: white;
 }
