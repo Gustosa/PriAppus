@@ -19,11 +19,9 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    0deg,
-    rgba(100, 49, 141, 1) 33%,
-    rgba(65, 98, 166, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(100, 49, 141, 1) 33%,
+      rgba(65, 98, 166, 1) 100%);
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
@@ -31,6 +29,20 @@ body {
   flex-flow: column;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: none;
+  border: none;
 }
 
 header#global_header {
@@ -139,17 +151,26 @@ main#global_main {
   color: white;
 }
 
-#srm .imagem {
+#srm #setup_button {
+  display: none;
+}
+
+.imagem {
   max-width: 300px;
   max-height: 300px;
 }
 
 #srm .texto {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #srm .texto h2 {
   margin-bottom: 5px;
+  display: block;
+  width: 100%;
 }
 
 #srm .texto h3 {
@@ -159,7 +180,7 @@ main#global_main {
 #srm .texto p {
   text-indent: 40px;
   text-align: justify;
-  margin-bottom: 5px;
+  margin: 10px 0 10px 0;
 }
 
 #srm ul li {
@@ -196,8 +217,8 @@ main#global_main {
 }
 
 footer#global_footer {
+  position: sticky;
   background: rgb(100, 49, 141);
-  bottom: 0px;
   margin-bottom: 0px;
   padding: 10px 10px 10px 10px;
   width: 100%;
@@ -248,22 +269,4 @@ aside#global_menu img {
 #corrigir button:hover {
   background-color: #097ba4;
   color: white;
-}
-
-body::-webkit-scrollbar {
-  width: 0;
-}
-
-body::-webkit-scrollbar-track {
-  background: none;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: none;
-  border-radius: none;
-  border: none;
-}
-
-#srm #setup_button {
-  display: none;
 }

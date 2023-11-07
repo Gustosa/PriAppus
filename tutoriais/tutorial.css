@@ -5,20 +5,28 @@ body {
   background-color: rgb(163, 170, 249);
 }
 
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
 .slide {
   display: none;
 }
 
 .slide.ativo {
-  display: block;
-  margin-left: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 #balao {
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 2px blue solid;
+  border: 2px solid black;
   border-radius: 20px;
   width: 200px;
   position: relative;
@@ -27,13 +35,13 @@ body {
 }
 
 #balao::after {
+  background-color: whitesmoke;
   content: "";
   width: 25px;
   height: 25px;
-  background-color: rgba(163, 170, 249);
   border-top: 0;
   border: 2px solid;
-  border-color: transparent blue blue transparent;
+  border-color: transparent black black transparent;
   position: absolute;
   display: block;
   transform: rotate(45deg);
@@ -47,15 +55,20 @@ body {
 }
 
 #romulo {
-  width: 250px;
-  height: 250px;
+  padding: 20px 0 20px 0;
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  gap: 30px;
 }
 
 a {
   text-decoration: none;
 }
 
-footer button{
+footer a button {
   justify-content: center;
   align-items: center;
   background-color: #bdd3f3;
