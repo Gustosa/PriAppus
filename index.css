@@ -19,15 +19,14 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg,
-      rgba(100, 49, 141, 1) 33%,
-      rgba(65, 98, 166, 1) 100%);
+  background: linear-gradient(0deg, rgba(100, 49, 141, 1) 33%, rgba(65, 98, 166, 1) 100%);
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -140,7 +139,7 @@ main#global_main {
   background-color: #bdd3f3;
   color: black;
   border: none;
-  min-width: 150px;
+  min-width: 200px;
   min-height: 50px;
   border-radius: 15px;
   cursor: pointer;
@@ -208,6 +207,15 @@ main#global_main {
   border-radius: 10px;
 }
 
+#srm #pergunta .explicacao {
+  display: none
+}
+
+#srm #pergunta .aberta {
+  display: block;
+
+}
+
 #srm #pergunta .verde {
   background-color: green;
 }
@@ -217,11 +225,10 @@ main#global_main {
 }
 
 footer#global_footer {
-  position: sticky;
+  bottom: 0;
   background: rgb(100, 49, 141);
   margin-bottom: 0px;
   padding: 10px 10px 10px 10px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
