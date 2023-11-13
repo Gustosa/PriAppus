@@ -22,6 +22,7 @@ main {
 }
 
 #balao {
+  color: black;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
@@ -30,7 +31,6 @@ main {
   border-radius: 20px;
   width: 200px;
   position: relative;
-  height: 160px;
   text-align: justify;
 }
 
@@ -85,7 +85,10 @@ footer button:hover {
   color: white;
 }
 
+main #tutorial {
+  margin: auto;
+}
 
 main #tutorial::backdrop {
- background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }

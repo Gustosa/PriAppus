@@ -19,7 +19,11 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(100, 49, 141, 1) 33%, rgba(65, 98, 166, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(100, 49, 141, 1) 33%,
+    rgba(65, 98, 166, 1) 100%
+  );
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
@@ -209,7 +213,7 @@ main#global_main {
 }
 
 #srm #pergunta .explicacao {
-  display: none
+  display: none;
 }
 
 #srm #pergunta .aberta {
@@ -221,7 +225,7 @@ main#global_main {
 }
 
 #srm #pergunta .aberta p {
-  color: black
+  color: black;
 }
 
 #srm #pergunta .verde {
@@ -315,7 +319,6 @@ main .slide.ativo {
   border-radius: 20px;
   width: 200px;
   position: relative;
-  height: 160px;
   text-align: justify;
 }
 
