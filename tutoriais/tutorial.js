@@ -8,8 +8,6 @@ function mudarSlide(acao) {
         }
     });
 
-
-
     if (acao == 1) { //1 = próximo
         if (slide_ativo < slides.length - 1) {
             slides[slide_ativo + 1].classList.add('ativo')

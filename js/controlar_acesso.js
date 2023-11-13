@@ -3,6 +3,11 @@ function finalizar_tutorial() {
   window.location.href = "../";
 }
 
+function abrirTutorial() {
+  var tutorial = document.querySelector('#tutorial');
+  tutorial.showModal()
+}
+
 function verifica_tutorial() {
   if (!localStorage.key("tutorial")) {
     location.href = "tutoriais/tutorial_index.html";

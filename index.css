@@ -251,6 +251,15 @@ footer#index_footer {
   justify-content: center;
 }
 
+footer#index_footer button {
+  background: rgb(100, 49, 141);
+  border: none;
+}
+
+footer#index_footer button img {
+  cursor: pointer;
+}
+
 footer#global_footer button {
   all: unset;
   cursor: pointer;
@@ -283,5 +292,80 @@ aside#global_menu img {
 
 #corrigir button:hover {
   background-color: #097ba4;
+  color: white;
+}
+
+main .slide {
+  display: none;
+}
+
+main .slide.ativo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#balao {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 200px;
+  position: relative;
+  height: 160px;
+  text-align: justify;
+}
+
+#balao::after {
+  background-color: whitesmoke;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 0;
+  border: 2px solid;
+  border-color: transparent black black transparent;
+  position: absolute;
+  display: block;
+  transform: rotate(45deg);
+  bottom: -15px;
+  left: 30%;
+  margin: 0;
+}
+
+#mascote {
+  left: 100px;
+}
+
+#romulo {
+  padding: 20px 0 20px 0;
+}
+
+#footer {
+  display: flex;
+  bottom: 0;
+  gap: 30px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer a button {
+  justify-content: center;
+  align-items: center;
+  background-color: #bdd3f3;
+  color: black;
+  border: none;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#footer button:hover {
+  background-color: #1a0891;
   color: white;
 }

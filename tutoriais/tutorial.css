@@ -84,3 +84,8 @@ footer button:hover {
   background-color: #1a0891;
   color: white;
 }
+
+
+main #tutorial::backdrop {
+ background-color: rgba(0,0,0,0.5);
+}
