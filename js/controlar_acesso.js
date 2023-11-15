@@ -8,8 +8,6 @@ function finalizar_tutorial2() {
   window.location.href = "../PriAppus";
 }
 
-var x;
-
 function abrirTutorial() {
   var tutorial = document.querySelector("#tutorial");
   tutorial.showModal();
