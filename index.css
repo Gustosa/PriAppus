@@ -19,11 +19,9 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    0deg,
-    rgba(100, 49, 141, 1) 33%,
-    rgba(65, 98, 166, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(100, 49, 141, 1) 33%,
+      rgba(65, 98, 166, 1) 100%);
   max-width: 800px;
   min-width: 320px;
   min-height: 100vh;
@@ -94,9 +92,8 @@ aside#global_menu h3 {
 aside#global_menu ul li a {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 1.2rem;
   font-size: 1.5rem;
 }
 
@@ -212,6 +209,10 @@ main#global_main {
   border-radius: 10px;
 }
 
+#srm #pergunta #alternativas .alternativa .resposta {
+  cursor: pointer;
+}
+
 #srm #pergunta .explicacao {
   display: none;
 }
@@ -242,7 +243,8 @@ footer#global_footer {
   margin-bottom: 0px;
   padding: 10px 10px 10px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 70%;
 }
 
 footer#index_footer {
@@ -296,79 +298,5 @@ aside#global_menu img {
 
 #corrigir button:hover {
   background-color: #097ba4;
-  color: white;
-}
-
-main .slide {
-  display: none;
-}
-
-main .slide.ativo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-#balao {
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border: 2px solid black;
-  border-radius: 20px;
-  width: 200px;
-  position: relative;
-  text-align: justify;
-}
-
-#balao::after {
-  background-color: whitesmoke;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 0;
-  border: 2px solid;
-  border-color: transparent black black transparent;
-  position: absolute;
-  display: block;
-  transform: rotate(45deg);
-  bottom: -15px;
-  left: 30%;
-  margin: 0;
-}
-
-#mascote {
-  left: 100px;
-}
-
-#romulo {
-  padding: 20px 0 20px 0;
-}
-
-#footer {
-  display: flex;
-  bottom: 0;
-  gap: 30px;
-}
-
-#footer a {
-  text-decoration: none;
-}
-
-#footer a button {
-  justify-content: center;
-  align-items: center;
-  background-color: #bdd3f3;
-  color: black;
-  border: none;
-  min-width: 150px;
-  min-height: 50px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-#footer button:hover {
-  background-color: #1a0891;
   color: white;
 }
