@@ -11,10 +11,10 @@
   <link href="../img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
 </head>
 
-<body>
+<body id="body">
   <header></header>
 
-  <main>
+  <main id="main">
     <div class="slide ativo" data-slide="1">
       <div id="balao">Seja bem vindo ao PriAppus!</div>
 
@@ -22,11 +22,11 @@
         <img src="../img/mascote.png" alt="" id="romulo" />
       </div>
 
-      <footer>
+      <div id="footer">
         <a href="javascript:void(0)" onclick="mudarSlide(1)">
           <button>Próximo</button>
         </a>
-      </footer>
+      </div>
     </div>
 
     <div class="slide" data-slide="2">
@@ -40,14 +40,14 @@
         <img src="../img/mascote.png" alt="" id="romulo" />
       </div>
 
-      <footer>
+      <div id="footer">
         <a href="javascript:void(0)" onclick="mudarSlide(-1)">
           <button>Anterior</button>
         </a>
         <a href="javascript:void(0)" onclick="mudarSlide(1)">
           <button>Próximo</button>
         </a>
-      </footer>
+      </div>
     </div>
 
     <div class="slide" data-slide="3">
@@ -60,14 +60,14 @@
         <img src="../img/mascote.png" alt="" id="romulo" />
       </div>
 
-      <footer>
+      <div id="footer">
         <a href="javascript:void(0)" onclick="mudarSlide(-1)">
           <button>Anterior</button>
         </a>
         <a href="javascript:void(0)" onclick="finalizar_tutorial()">
           <button>Fechar</button>
         </a>
-      </footer>
+      </div>
     </div>
   </main>
 </body>

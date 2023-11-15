@@ -1,11 +1,15 @@
-body {
+* {
+  margin: 0;
+}
+
+#body {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(163, 170, 249);
 }
 
-main {
+#main {
   width: 100vw;
   height: 100vh;
 }
@@ -58,17 +62,17 @@ main {
   padding: 20px 0 20px 0;
 }
 
-footer {
+#footer {
   display: flex;
   bottom: 0;
   gap: 30px;
 }
 
-a {
+#footer a {
   text-decoration: none;
 }
 
-footer a button {
+#footer a button {
   justify-content: center;
   align-items: center;
   background-color: #bdd3f3;
@@ -80,7 +84,7 @@ footer a button {
   cursor: pointer;
 }
 
-footer button:hover {
+#footer button:hover {
   background-color: #1a0891;
   color: white;
 }
