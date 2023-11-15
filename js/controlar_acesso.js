@@ -1,5 +1,10 @@
 function finalizar_tutorial() {
   localStorage.setItem("tutorial", true);
+  window.location.href = "../";
+}
+
+function finalizar_tutorial2() {
+  localStorage.setItem("tutorial", true);
   window.location.href = "../PriAppus";
 }
 
