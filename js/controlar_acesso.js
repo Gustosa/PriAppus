@@ -1,6 +1,6 @@
 function finalizar_tutorial() {
   localStorage.setItem("tutorial", true);
-  window.location.href = "../";
+  window.location.href = "../index.html";
 }
 
 var x;
