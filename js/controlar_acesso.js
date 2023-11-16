@@ -5,7 +5,7 @@ function finalizar_tutorial() {
 
 function finalizar_tutorial2() {
   localStorage.setItem("tutorial", true);
-  window.location.href = "../PriAppus";
+  location.reload();
 }
 
 function abrirTutorial() {
