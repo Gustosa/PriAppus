@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 
 header#global_header {
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
   display: flex;
   padding: 0 0.5rem;
 }
@@ -237,6 +237,26 @@ main#global_main {
   background-color: red;
 }
 
+#srm #corrigir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#srm #corrigir button {
+  background-color: #839ea8;
+  border: none;
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#srm #corrigir button:hover {
+  background-color: #097ba4;
+  color: white;
+}
+
 footer#global_footer {
   bottom: 0;
   background: rgb(100, 49, 141);
@@ -279,24 +299,4 @@ aside#global_menu img {
   height: 2rem;
   position: relative;
   z-index: 1001;
-}
-
-#corrigir {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#corrigir button {
-  background-color: #839ea8;
-  border: none;
-  min-width: 150px;
-  min-height: 50px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-#corrigir button:hover {
-  background-color: #097ba4;
-  color: white;
 }
