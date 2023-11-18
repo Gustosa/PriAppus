@@ -52,7 +52,6 @@ var assets = [
   "img/glandula_bulbouretral.png",
   "tutoriais/tutorial.css",
   "tutoriais/tutorial_index.html",
-  "tutoriais/tutorial_telas.html",
   "tutoriais/tutorial.js",
   "orgaos/testiculos/definicao.html",
   "orgaos/testiculos/orgao.html",
