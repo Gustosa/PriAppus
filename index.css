@@ -237,13 +237,13 @@ main#global_main {
   background-color: red;
 }
 
-#srm #corrigir {
+main #corrigir {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#srm #corrigir button {
+main #corrigir button {
   background-color: #839ea8;
   border: none;
   min-width: 150px;
@@ -252,7 +252,7 @@ main#global_main {
   cursor: pointer;
 }
 
-#srm #corrigir button:hover {
+main #corrigir button:hover {
   background-color: #097ba4;
   color: white;
 }
